@@ -336,7 +336,6 @@ public class qsServiceImpl extends ServiceImpl<QuesMapper, OjQuestion> implement
         List<SoluNumsDto>data=Arrays.asList(getnums,gettotalnums);
         return  ResponseResult.okResult(data);
     }
-
     @Override
     public ResponseResult addl(Long id) {
         qm.addl(id);
