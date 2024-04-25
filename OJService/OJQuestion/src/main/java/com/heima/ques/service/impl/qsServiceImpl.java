@@ -328,7 +328,6 @@ public class qsServiceImpl extends ServiceImpl<QuesMapper, OjQuestion> implement
         return ResponseResult.okResult(collect);
 
     }
-
     @Override
     public ResponseResult sn(Long uid) {
         SoluNumsDto getnums = qm.getnums(uid);
