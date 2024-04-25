@@ -1,0 +1,12 @@
+server:
+  port: 51603
+spring:
+  application:
+    name: oj-blog
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.128.130:8848
+      config:
+        server-addr: 192.168.128.130:8848
+        file-extension: yml

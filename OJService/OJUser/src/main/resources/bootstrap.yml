@@ -1,0 +1,15 @@
+feign:
+  hystrix:
+    enabled: false
+server:
+  port: 51601
+spring:
+  application:
+    name: oj-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.128.130:8848
+      config:
+        server-addr: 192.168.128.130:8848
+        file-extension: yml

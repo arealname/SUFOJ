@@ -1,0 +1,28 @@
+server:
+  port: 51605
+spring:
+  application:
+    name: oj-judger
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.128.130:8848
+      config:
+        server-addr: 192.168.128.130:8848
+        file-extension: yml
+  rabbitmq:
+    host: 192.168.128.130
+    port: 5672
+    password: 111
+    virtual-host: /hmall
+    username: hln
+    listener:
+      simple:
+        #决定被拒绝的消息是否重新入队
+        default-requeue-rejected: true
+        retry:
+          #时间间隔1秒
+          initial-interval: 1000ms
+          enabled: false
+          #最大重试次数
+          max-attempts: 0

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="OJUtils" />
+        <module name="OJFileStarter" />
+        <module name="OJApi" />
+        <module name="OJudger" />
+        <module name="OJUser" />
+        <module name="OJBlog" />
+        <module name="OJModel" />
+        <module name="OJGateWay" />
+        <module name="OJQuestion" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OJApi" options="-parameters" />
+      <module name="OJBasic" options="-parameters" />
+      <module name="OJBlog" options="-parameters" />
+      <module name="OJFileStarter" options="-parameters" />
+      <module name="OJGateWay" options="-parameters" />
+      <module name="OJModel" options="-parameters" />
+      <module name="OJQuestion" options="-parameters" />
+      <module name="OJService" options="-parameters" />
+      <module name="OJUser" options="-parameters" />
+      <module name="OJUtils" options="-parameters" />
+      <module name="OJudger" options="-parameters" />
+      <module name="SUFEOJ" options="-parameters" />
+    </option>
+  </component>
+</project>

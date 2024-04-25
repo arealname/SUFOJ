@@ -1,0 +1,39 @@
+server:
+  port: 51602
+spring:
+  application:
+    name: oj-ques
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.128.130:8848
+      config:
+        server-addr: 192.168.128.130:8848
+        file-extension: yml
+  rabbitmq:
+    host: 192.168.128.130
+    port: 5672
+    password: 111
+    virtual-host: /hmall
+    username: hln
+    listener:
+      simple:
+        #决定被拒绝的消息是否重新入队
+        default-requeue-rejected: true
+        retry:
+          #时间间隔1秒
+          initial-interval: 1000ms
+          enabled: true
+          #最大重试次数
+          max-attempts: 2
+
+  redis:
+    host: 192.168.128.130
+    port: 6379
+    password: 123456
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
