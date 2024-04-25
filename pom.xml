@@ -168,6 +168,7 @@
             </dependency>
             <!-- fastjson -->
             <dependency>
+
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
