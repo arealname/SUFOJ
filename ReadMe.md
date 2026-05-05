@@ -14,9 +14,20 @@
 
 本项目的本地部署方式：
 
-1.本地准备的软件环境：
+1.软件环境：
 
-    IDEA , VSCODE, VMware workstation(虚拟机用于装docker)
+    IDEA（后端），VSCODE（前端），VMware workstation（虚拟机用于装docker）
+
+2.项目结构：
+
+    本项目分为两个部分，后端和前端，后端使用SpringBoot框架，前端使用Vue3框架，后端和前端通过API进行通信。
+
+
+3.部署最终结果
+
+    本地内容： Mysql 数据库
+
+    虚拟机： docker(镜像包含 rabbitmq，judge0，nacos, minio), redis
 
 
     
