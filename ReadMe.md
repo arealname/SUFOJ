@@ -23,9 +23,9 @@
     本项目分为两个部分，后端和前端，后端使用SpringBoot框架，前端使用Vue3框架，后端和前端通过API进行通信。
 
 
-3.部署最终结果
+3.部署需要的环境
 
-    本地内容： Mysql 数据库
+    本地内容： Mysql(装在docker里也可以)
 
     虚拟机： docker(镜像包含 rabbitmq，judge0，nacos, minio), redis
 
