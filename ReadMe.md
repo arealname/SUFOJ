@@ -20,7 +20,7 @@
 
 2.项目结构：
 
-    本项目分为两个部分，后端和前端，后端使用SpringBoot框架，前端使用Vue3框架，后端和前端通过API进行通信。
+    本项目分为两个部分，后端（本仓库）和前端（https://github.com/arealname/SUFOJ-front），后端使用SpringBoot框架，前端使用Vue3框架，后端和前端通过API进行通信。
 
 
 3.部署需要的环境
